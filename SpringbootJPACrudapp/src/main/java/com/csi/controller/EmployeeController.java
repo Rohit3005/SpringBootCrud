@@ -15,7 +15,7 @@ public class EmployeeController {
     @Autowired
     EmployeeServiceImpl employeeServiceImpl;
 
-    @PostMapping("/savedata")
+    @PostMapping("/savedata")//
     public String saveData(@RequestBody Employee employee) {
         employeeServiceImpl.saveData(employee);
 
